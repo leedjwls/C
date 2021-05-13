@@ -1,0 +1,14 @@
+#include <stdio.h>
+
+int main() {
+  int y, a = 0, b = 0;
+  printf("정수를 입력하세요: ");
+  scanf("%d", &y);
+  
+  do {
+    a ++;
+    b += a * a;
+  } while(b < y);
+  printf("%d\n", b);
+}
+
